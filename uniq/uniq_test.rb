@@ -1,3 +1,5 @@
+require 'minitest/autorun'
+
 class Array
   undef uniq
 end
@@ -6,7 +8,6 @@ module Enumerable
   undef uniq
 end
 
-require 'minitest/autorun'
 require_relative 'uniq'
 
 class UniqTest < MiniTest::Test
